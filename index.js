@@ -61,11 +61,12 @@ const server = http.createServer((req, res) => {
             const payloadString = JSON.stringify(payload);
 
             // Return the response
+            res.setHeader('Content-Type', 'application/json');
             res.writeHead(statusCode);
             res.end(payloadString);
 
             // Log the request path    
-            console.log('Request is received with this payload: ',buffer);
+            console.log('Returning this response: ',statusCode,payloadString);
         });
 
         
@@ -87,7 +88,7 @@ handlers.sample = (data, callback) => {
 };
 
 // Not found handler
-handlers.sample = (data, callback) => {
+handlers.notFound = (data, callback) => {
     callback(404);
 };
 
