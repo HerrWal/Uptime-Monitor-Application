@@ -1,8 +1,14 @@
 # Uptime Monitor Application
- RESTful API for an uptime monitor application
+ A web page uptime monitor application
 
-Allows users to enter URLs they want monitored, and receive alerts when those resources "go down" or "come back up."
+IS built with a RESTful API made in Node.js, a clean GUI and a CLI with basic commands to monitor the app and get info about users, usage and logs information.
 
-The app should be useable, so we'll include features such as user sign-up and sign-in.
+It allows users to enter URLs they want monitored, and receive alerts when those resources "go down" or "come back up."
 
-We'll also include functionality for sending an SMS alert to user, rather than email via Twilio API.
+The app includes features such as:
+
+    * User sign-up and sign-in, log-out and delete account.
+
+    * A built-in authentication.
+
+    * It also includes a functionality for sending a SMS alerts to user via Twilio API.
